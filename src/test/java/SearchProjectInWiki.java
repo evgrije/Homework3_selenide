@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SearchProjectInWiki {
     @Test
-    void seachJunitProject(){
+    void searchJunitProject(){
         open("https://github.com/selenide/selenide");
         $("[data-content=Wiki]").click();
         $(".markdown-body").shouldHave(text("Soft assertions"));
